@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>bindchat Support — AI chat that runs entirely on your iPhone</title>
+<meta name="description" content="bindchat is an offline AI chat app that runs entirely on your iPhone. How to use it, FAQ and contact.">
+<link rel="stylesheet" href="../style.css">
+<link rel="icon" type="image/png" sizes="64x64" href="../assets/favicon-64.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon-32.png">
+<link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
+<link rel="alternate" hreflang="ja" href="https://daichiofuchi.github.io/bindchat-support/">
+<link rel="alternate" hreflang="en" href="https://daichiofuchi.github.io/bindchat-support/en/">
+<meta property="og:title" content="bindchat — AI chat that runs entirely on your iPhone">
+<meta property="og:description" content="Offline AI chat that works without a signal. Your conversations never leave your device.">
+<meta property="og:image" content="https://daichiofuchi.github.io/bindchat-support/assets/icon-512.png">
+</head>
+<body>
+<header class="site">
+  <div class="wrap">
+    <a class="brand" href="./"><img src="../assets/icon-256.png" alt="">bindchat</a>
+    <nav class="links">
+      <a href="./" aria-current="page">Support</a>
+      <a href="privacy.html">Privacy</a>
+      <a class="lang" href="../" hreflang="ja" lang="ja">日本語</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+  <section class="hero">
+    <img class="icon" src="../assets/icon-512.png" alt="bindchat app icon" width="112" height="112">
+    <h1>bindchat<span class="dot">.</span></h1>
+    <p class="tag">An offline AI chat that runs entirely on your iPhone.<br>It works without a signal, even in Airplane Mode. Your conversations never leave your device.</p>
+  </section>
+
+  <h2>What is bindchat?</h2>
+  <p>bindchat runs an AI language model directly on your iPhone. Download a model once, and you can chat without an internet connection. There is no account to create and nothing to buy.</p>
+  <ul class="features">
+    <li><strong>Runs on your device</strong>The AI runs on your iPhone with the open-source llama.cpp. What you type and your chat history are never sent to a server.</li>
+    <li><strong>Choose your model</strong>Pick from openly available models such as Qwen, Gemma and Llama, sized to fit your iPhone's memory.</li>
+    <li><strong>Knowledge packs</strong>Turn on a pack (a set of documents) in a chat, and the AI searches those documents to answer, showing which ones it used.</li>
+    <li><strong>Disaster preparedness pack</strong>Includes documents on earthquakes, tsunamis, heavy rain, shelters, supplies, first aid and more for Japan. Available on-device even when the network is down. (The documents are in Japanese.)</li>
+  </ul>
+
+  <h2>Getting started</h2>
+  <ol>
+    <li>Connect to Wi-Fi and open the <strong>Models</strong> tab.</li>
+    <li>Tap <strong>Download</strong> on a recommended model, for example “Gemma 3 1B” (about 800 MB). For Gemma and Llama models, you'll see the license first.</li>
+    <li>When the download finishes, tap <strong>Use This Model</strong>, then start chatting in the <strong>Chat</strong> tab.</li>
+    <li>To use the disaster preparedness documents, tap the <strong>Knowledge Packs</strong> button above the message field and select the pack.</li>
+  </ol>
+  <p class="note">AI can make mistakes. In an emergency, call your local emergency number right away (in Japan: 119 for fire/ambulance, 110 for police) and follow official guidance.</p>
+
+  <h2>FAQ</h2>
+
+  <details>
+    <summary>Does it really work offline?</summary>
+    <p>Yes. Once a model is downloaded, chatting, searching knowledge packs and importing documents all work in Airplane Mode. bindchat only uses the internet when you download a model (directly from Hugging Face to your device) and when you open a link in Settings (such as this website).</p>
+  </details>
+
+  <details>
+    <summary>Which model should I choose?</summary>
+    <p>The Models tab rates each model as Comfortable, Tight or Too large based on your iPhone's memory. If you're not sure, pick one marked Comfortable.</p>
+    <ul>
+      <li>Light and fast: Qwen3.5 0.8B (about 530 MB), Gemma 3 1B (about 800 MB)</li>
+      <li>Balanced: Qwen3 1.7B, Qwen3.5 2B (about 1.1–1.3 GB)</li>
+      <li>Smarter but heavier: Llama 3.2 3B, Qwen3 4B, Gemma 3 4B (about 2–2.5 GB; for iPhones with more memory)</li>
+    </ul>
+  </details>
+
+  <details>
+    <summary>Can I add a model that isn't in the list?</summary>
+    <p>Yes. In the Models tab, tap <strong>Add a Model from a Hugging Face URL</strong> and enter the URL of a GGUF file (for example <code>https://huggingface.co/…/resolve/main/…gguf</code>). Other https URLs also work. Models that require a login, or formats llama.cpp doesn't support, can't be used. Check the license of any model you add on its own page.</p>
+  </details>
+
+  <details>
+    <summary>What are knowledge packs? Can I use my own documents?</summary>
+    <p>A knowledge pack is a set of documents you want the AI to look things up in. When a pack is on in a chat, bindchat finds the relevant parts and answers based on them (sources are shown under the answer).</p>
+    <ul>
+      <li>In the Knowledge Packs tab, tap <strong>Create Pack</strong> to import PDF, text or Markdown files.</li>
+      <li>Imported documents are stored only on your device and are never uploaded.</li>
+      <li>Downloading a search model (such as multilingual-e5-small, about 130 MB) helps find documents even when your question uses different wording (vector search).</li>
+    </ul>
+  </details>
+
+  <details>
+    <summary>Where does the disaster preparedness content come from?</summary>
+    <p>bindchat summarized and reorganized, in its own words, public information from Japanese organizations such as the Cabinet Office, the Japan Meteorological Agency, the Fire and Disaster Management Agency, the Ministry of Health, Labour and Welfare and the Japanese Red Cross Society. Each document shows its sources. Check those organizations' official websites for the latest information.</p>
+  </details>
+
+  <details>
+    <summary>It's slow, it crashes, or a model won't load</summary>
+    <ul>
+      <li>Close other apps first (especially the camera, games or many browser tabs).</li>
+      <li>Switch to a smaller model marked Comfortable.</li>
+      <li>Lower <strong>Context Length</strong> in Settings to use less memory (the AI remembers less of long chats).</li>
+      <li>Start a <strong>New Chat</strong> when a conversation gets long.</li>
+      <li>Downloads need free storage. You can delete models you don't use in the Models tab.</li>
+      <li>Your iPhone may get warm while loading a large model or writing a long answer.</li>
+    </ul>
+  </details>
+
+  <details>
+    <summary>A download stopped or failed</summary>
+    <p>Check your Wi-Fi connection and tap <strong>Download</strong> again. Models are hundreds of megabytes to several gigabytes, so Wi-Fi is recommended over cellular data.</p>
+  </details>
+
+  <details>
+    <summary>What if the AI gives a wrong or inappropriate answer?</summary>
+    <p>Touch and hold the answer and tap <strong>Report This Answer</strong>. Your Mail app opens with the answer filled in. Review it and decide whether to send it. The app never sends anything on its own.</p>
+  </details>
+
+  <details>
+    <summary>How do I delete my chats and data?</summary>
+    <p>Delete individual chats from the chat list, or delete all chat history in Settings. Deleting the app removes all of its data, including models, documents and history.</p>
+  </details>
+
+  <details>
+    <summary>Which languages are supported?</summary>
+    <p>The app is available in English and Japanese and follows your iPhone's language. You can talk to the AI in any language it understands (the bundled disaster preparedness documents are in Japanese).</p>
+  </details>
+
+  <details>
+    <summary>How much does it cost? Which devices are supported?</summary>
+    <p>bindchat is free, with no ads and no in-app purchases. It requires an iPhone with iOS 17 or later. Larger models are for iPhones with more memory (8 GB or more).</p>
+  </details>
+
+  <h2 id="contact">Contact</h2>
+  <div class="contact">
+    <p>For questions, bug reports or suggestions, please send an email. bindchat is made by an individual developer, so replies may take some time.</p>
+    <p class="mail"><a href="mailto:dai1011q@gmail.com?subject=bindchat%20inquiry">dai1011q@gmail.com</a></p>
+    <p class="sub">For bugs, please include your iPhone model, iOS version, the model you were using and what happened. You can find the app version in Settings → About This App.</p>
+  </div>
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <span>© 2026 Ofuchi Daichi</span>
+    <a href="privacy.html">Privacy Policy</a>
+    <a href="../" hreflang="ja" lang="ja">日本語</a>
+  </div>
+</footer>
+</body>
+</html>

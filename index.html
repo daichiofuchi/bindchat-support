@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>bindchat サポート — iPhone の中だけで動く AI チャット</title>
+<meta name="description" content="bindchat（ばいちゃ）は、iPhone の中だけで動くオフラインの AI チャットアプリです。使い方・よくある質問・お問い合わせ。">
+<link rel="stylesheet" href="style.css">
+<link rel="icon" type="image/png" sizes="64x64" href="assets/favicon-64.png">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<link rel="alternate" hreflang="ja" href="https://daichiofuchi.github.io/bindchat-support/">
+<link rel="alternate" hreflang="en" href="https://daichiofuchi.github.io/bindchat-support/en/">
+<meta property="og:title" content="bindchat — iPhone の中だけで動く AI チャット">
+<meta property="og:description" content="電波がなくても使える、オフラインの AI チャット。会話は端末の外に出ません。">
+<meta property="og:image" content="https://daichiofuchi.github.io/bindchat-support/assets/icon-512.png">
+</head>
+<body>
+<header class="site">
+  <div class="wrap">
+    <a class="brand" href="./"><img src="assets/icon-256.png" alt="">bindchat</a>
+    <nav class="links">
+      <a href="./" aria-current="page">サポート</a>
+      <a href="privacy.html">プライバシー</a>
+      <a class="lang" href="en/" hreflang="en" lang="en">English</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+  <section class="hero">
+    <img class="icon" src="assets/icon-512.png" alt="bindchat のアイコン" width="112" height="112">
+    <h1>bindchat<span class="dot">.</span></h1>
+    <p class="tag">iPhone の中だけで動く、オフラインの AI チャット。<br>電波がなくても、機内モードでも使えます。会話は端末の外に出ません。</p>
+  </section>
+
+  <h2>bindchat とは</h2>
+  <p>bindchat（愛称: ばいちゃ）は、AI（大規模言語モデル）を iPhone の中で動かすチャットアプリです。最初にモデルをダウンロードすれば、あとはインターネットにつながっていなくても使えます。アカウント登録や課金はありません。</p>
+  <ul class="features">
+    <li><strong>端末内だけで動く</strong>オープンソースの llama.cpp で、AI を iPhone 上で実行します。入力した文章や会話の履歴がサーバーに送られることはありません。</li>
+    <li><strong>モデルを選べる</strong>Qwen・Gemma・Llama などの公開モデルから、iPhone のメモリに合うものを選んでダウンロードできます。</li>
+    <li><strong>知識パック</strong>資料のまとまり（パック）をチャットでオンにすると、その資料を検索して答えます。参照した資料も表示します。</li>
+    <li><strong>防災パック付き</strong>地震・津波・大雨・避難所・備蓄・応急手当・171 などの資料を同梱。電波がない災害時にも端末内で調べられます。</li>
+  </ul>
+
+  <h2>はじめかた</h2>
+  <ol>
+    <li>Wi-Fi につないで、「モデル」タブを開きます。</li>
+    <li>おすすめのモデル（たとえば「Gemma 3 1B」約 800 MB）の「ダウンロード」をタップします。Gemma・Llama は、最初にライセンスの確認画面が出ます。</li>
+    <li>ダウンロードが終わったら「このモデルを使う」を選び、「チャット」タブで話しかけます。</li>
+    <li>防災の資料を使うときは、チャットの入力欄の上にある「知識パック」ボタンから「防災」を選びます。</li>
+  </ol>
+  <p class="note">AI は間違えることがあります。命に関わるときは、迷わず 119（救急・消防）／110（警察）に連絡し、自治体や気象庁などの公式情報に従ってください。</p>
+
+  <h2>よくある質問</h2>
+
+  <details>
+    <summary>本当にオフラインで使えますか？</summary>
+    <p>はい。モデルのダウンロードが終われば、機内モードでもチャット・知識パックの検索・資料の取り込みができます。インターネットを使うのは、あなたがモデルをダウンロードするとき（Hugging Face から端末へ直接）と、設定画面のリンク（このサイトなど）を開くときだけです。</p>
+  </details>
+
+  <details>
+    <summary>どのモデルを選べばいいですか？</summary>
+    <p>「モデル」タブでは、お使いの iPhone のメモリから「快適・ギリギリ・厳しい」の目安を表示します。迷ったら「快適」と表示されるものを選んでください。</p>
+    <ul>
+      <li>軽くて速い: Qwen3.5 0.8B（約 530 MB）、Gemma 3 1B（約 800 MB）</li>
+      <li>バランス: Qwen3 1.7B、Qwen3.5 2B（約 1.1〜1.3 GB）</li>
+      <li>賢いが重い: Llama 3.2 3B、Qwen3 4B、Gemma 3 4B（約 2〜2.5 GB。メモリの多い iPhone 向け）</li>
+    </ul>
+  </details>
+
+  <details>
+    <summary>カタログにないモデルを追加できますか？</summary>
+    <p>「モデル」タブの「Hugging Face の URL からモデルを追加」で、GGUF 形式のファイルの URL（例: <code>https://huggingface.co/…/resolve/main/…gguf</code>）を指定して追加できます。Hugging Face 以外の https の URL も指定できます。ログインが必要なモデルや、llama.cpp が対応していない形式のモデルは使えません。追加したモデルのライセンスは、それぞれのモデルのページで確認してください。</p>
+  </details>
+
+  <details>
+    <summary>知識パックとは？ 自分の資料を使えますか？</summary>
+    <p>知識パックは、AI に調べさせたい資料のまとまりです。チャットでパックをオンにすると、質問に関係する部分を資料から探して、それをもとに答えます（回答の下に「参照した資料」を表示）。</p>
+    <ul>
+      <li>「知識パック」タブの「パックを作成」から、PDF・テキスト・Markdown を取り込んで自分のパックを作れます。</li>
+      <li>取り込んだ資料は端末の中にだけ保存され、外部には送られません。</li>
+      <li>「検索用モデル」（multilingual-e5-small など、約 130 MB）をダウンロードすると、言い回しが違う質問でも資料を見つけやすくなります（ベクトル検索）。</li>
+    </ul>
+  </details>
+
+  <details>
+    <summary>防災パックの資料はどこから来ていますか？</summary>
+    <p>内閣府・気象庁・総務省消防庁・厚生労働省・日本赤十字社などが公開している情報をもとに、bindchat が独自の文章で要約・再構成したものです。各資料の画面に出典を表示しています。最新の情報は各機関の公式サイトで確認してください。</p>
+  </details>
+
+  <details>
+    <summary>動作が重い・アプリが落ちる・モデルが読み込めない</summary>
+    <ul>
+      <li>ほかのアプリを閉じてから使ってください（特にカメラ・ゲーム・ブラウザのタブが多いとき）。</li>
+      <li>「快適」と表示される、より小さいモデルに切り替えてください。</li>
+      <li>「設定」の「コンテキスト長」を小さくすると、メモリの使用量が減ります（長い会話は覚えにくくなります）。</li>
+      <li>長い会話は「新しいチャット」で始め直すと速くなります。</li>
+      <li>iPhone の空き容量が少ないとダウンロードできません。不要なモデルは「モデル」タブで削除できます。</li>
+      <li>大きいモデルの読み込みや長い回答では、iPhone が温かくなることがあります。</li>
+    </ul>
+  </details>
+
+  <details>
+    <summary>ダウンロードが止まった・失敗した</summary>
+    <p>Wi-Fi の接続を確認して、もう一度「ダウンロード」をタップしてください。モデルは数百 MB〜数 GB あるため、モバイルデータ通信より Wi-Fi をおすすめします。</p>
+  </details>
+
+  <details>
+    <summary>おかしな回答・不適切な回答があったら？</summary>
+    <p>AI の回答を長押しして「この回答を報告」をタップすると、回答の本文が入ったメールがメールアプリで開きます。内容を確認して、送るかどうかはあなたが決めてください。アプリが自動で何かを送ることはありません。</p>
+  </details>
+
+  <details>
+    <summary>会話の履歴やデータを消したい</summary>
+    <p>チャットは一覧から削除できます。「設定」からすべての会話をまとめて削除することもできます。アプリを削除すると、モデル・資料・履歴などアプリ内のデータはすべて消えます。</p>
+  </details>
+
+  <details>
+    <summary>英語でも使えますか？</summary>
+    <p>はい。アプリの表示は日本語と英語に対応していて、iPhone の言語設定に合わせて切り替わります。AI には何語で話しかけても構いません（同梱の防災パックの資料は日本語です）。</p>
+  </details>
+
+  <details>
+    <summary>料金はかかりますか？ 対応機種は？</summary>
+    <p>無料です。広告やアプリ内課金もありません。iOS 17 以降の iPhone で動きます。大きいモデルはメモリの多い iPhone（8 GB 以上）向けです。</p>
+  </details>
+
+  <h2 id="contact">お問い合わせ</h2>
+  <div class="contact">
+    <p>ご質問・不具合のご報告・ご要望は、メールでお送りください。できるだけお返事しますが、個人で開発しているため時間がかかることがあります。</p>
+    <p class="mail"><a href="mailto:dai1011q@gmail.com?subject=bindchat%20%E3%81%B8%E3%81%AE%E3%81%8A%E5%95%8F%E3%81%84%E5%90%88%E3%82%8F%E3%81%9B">dai1011q@gmail.com</a></p>
+    <p class="sub">不具合のときは、iPhone の機種・iOS のバージョン・使っているモデル・起きたことを書いていただけると助かります（アプリの「設定」→「このアプリについて」でバージョンを確認できます）。</p>
+  </div>
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <span>© 2026 Ofuchi Daichi</span>
+    <a href="privacy.html">プライバシーポリシー</a>
+    <a href="en/" hreflang="en" lang="en">English</a>
+  </div>
+</footer>
+</body>
+</html>
