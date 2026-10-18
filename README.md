@@ -33,4 +33,4 @@ Pages may take a minute or two to go live after the first push.
 
 Edit both `privacy.html` and `en/privacy.html`, and update the effective date in both.
 
-Contact: dai1011q@gmail.com
+Contact: contact@everymind.si
