@@ -1,6 +1,6 @@
 # bindchat-support
 
-Support page and privacy policy for **bindchat**, an offline AI chat app for iPhone (Ofuchi Daichi).
+Support page and privacy policy for **bindchat**, an AI chat app for iPhone that runs on-device (Ofuchi Daichi).
 Static HTML/CSS for GitHub Pages; no build step, no JavaScript, no analytics.
 
 | Page | URL |
