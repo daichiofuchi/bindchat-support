@@ -1,6 +1,6 @@
 # bindchat-support
 
-Support page and privacy policy for **bindchat**, an AI chat app for iPhone that runs on-device (Ofuchi Daichi).
+Support page and privacy policy for **bindchat**, an AI chat app for iPhone that runs on-device (General Products).
 Static HTML/CSS for GitHub Pages; no build step, no JavaScript, no analytics.
 
 | Page | URL |
@@ -33,4 +33,4 @@ Pages may take a minute or two to go live after the first push.
 
 Edit both `privacy.html` and `en/privacy.html`, and update the effective date in both.
 
-Contact: contact@everymind.si
+Contact: contact@generalproducts.si
